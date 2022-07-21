@@ -734,6 +734,23 @@ video {
   width: 1rem;
 }
 
+@-webkit-keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+
+.animate-pulse {
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
 @-webkit-keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -765,23 +782,6 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
-}
-
-@-webkit-keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-@keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
-.animate-pulse {
-  -webkit-animation: pulse 1s infinite;
-          animation: pulse 1s infinite;
 }
 
 .cursor-pointer {
